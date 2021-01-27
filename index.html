@@ -340,36 +340,34 @@
                 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                 <form action="contact-form" class="contact-form">
                    <div class="form-field">
-                        <label class="form-lable">Имя 
-                            <div class="input-wrapper">
-                                <input type="text" name="name" autocomplete="name" class="form-input">
-                                <svg width="12" height="12" class="icon-input">
-                                    <use href="./img/symbol-defs.svg#icon-person"></use>
-                                </svg>
-                            </div>
-                        </label>
+                        <label class="form-lable" for="name">Имя</label> 
+                        <div class="input-wrapper">
+                            <input type="text" name="name" autocomplete="name" class="form-input"
+                            id="name">
+                            <svg width="12" height="12" class="icon-input">
+                                <use href="./img/symbol-defs.svg#icon-person"></use>
+                            </svg>
+                        </div>
                    </div>
 
                    <div class="form-field">
-                        <label class="form-lable">Телефон 
-                            <div class="input-wrapper">
-                                <input type="tel" name="phone-number" autocomplete="on" class="form-input">
-                                <svg width="13" height="13" class="icon-input">
-                                    <use href="./img/symbol-defs.svg#icon-phone"></use>
-                                </svg>
-                            </div>
-                        </label>
+                        <label class="form-lable" for="phone-number">Телефон</label> 
+                        <div class="input-wrapper">
+                            <input type="tel" name="phone-number" autocomplete="on" class="form-input" id="phone-number">
+                            <svg width="13" height="13" class="icon-input">
+                                <use href="./img/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </div>
                     </div>         
 
                     <div class="form-field">
-                        <label class="form-lable">Почта 
-                            <div class="input-wrapper">
-                                <input type="email" name="e-mail" autocomplete="on" class="form-input">
-                                <svg width="15" height="12" class="icon-input">
-                                    <use href="./img/symbol-defs.svg#icon-cover"></use>
-                                </svg>
-                            </div>
-                        </label>
+                        <label class="form-lable" for="e-mail">Почта</label>
+                        <div class="input-wrapper">
+                            <input type="email" name="e-mail" autocomplete="on" class="form-input" id="e-mail">
+                            <svg width="15" height="12" class="icon-input">
+                                <use href="./img/symbol-defs.svg#icon-cover"></use>
+                            </svg>
+                        </div>
                     </div> 
                     
                     <div class="form-comments">
@@ -436,7 +434,7 @@
                 <form class="subscribe-form">
                     <input type="email" name="e-mail" placeholder="E-mail">
                     <button type="submit" class="subscribe-button">
-                        <p>Подписаться</p>
+                        <span>Подписаться</span>
                         <svg width="24" height="24">
                             <use href="./img/symbol-defs.svg#icon-send"></use>
                         </svg>

@@ -456,7 +456,8 @@ footer h3 {
     font-weight: 700;
 }
 
-.subscribe-button p{
+.subscribe-button span{
+    display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -786,7 +787,8 @@ footer h3 {
 }
 
 .close-button:hover,
-.close-button:focus {
+.close-button:focus 
+{
     fill: var(--akcent-color);
 }
 
@@ -818,6 +820,7 @@ footer h3 {
     display:flex;   
     padding-left: 42px;
 
+
     transition: border var(--animation-duration) var(--animation-timing-function);
 }
 
@@ -831,6 +834,8 @@ footer h3 {
 .comment-textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .comment-textarea::placeholder {
@@ -888,8 +893,6 @@ footer h3 {
     transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 
-
-
 .checkbox-wrapper {
     display: flex;
     justify-content: center;
@@ -900,8 +903,6 @@ footer h3 {
 }
 
 .policy-checkbox {
-    display: inline-block;
-    visibility: hidden;
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -912,6 +913,10 @@ footer h3 {
 .checkbox-label {
     display: flex;
     align-items: center;
+}
+
+.policy-checkbox:focus + .checkbox-label::before {
+    border: 2px solid var(--akcent-color);
 }
 
 .checkbox-label::before {
@@ -930,6 +935,7 @@ footer h3 {
     background-origin:border-box;
     border-color: var(--akcent-color);
 }
+
 
 .policy-link {
     color: var(--akcent-color);
