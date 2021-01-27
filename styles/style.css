@@ -913,6 +913,7 @@ footer h3 {
 .checkbox-label {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .policy-checkbox:focus + .checkbox-label::before {
